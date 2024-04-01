@@ -18,7 +18,7 @@ import streamlit as st
 ###################################
 # Título de la aplicación
 st.title('Análisis de nuestro chat de WhatsApp ❤️')
-st.write('Creado por [Sandreke](https://linktr.ee/sandreke99) en este [tutorial](https://youtu.be/2eDccEfyQeM) 🎥')
+st.write('Creado por [Adrixr](https://linktr.ee/sandreke99) en este [tutorial](https://youtu.be/2eDccEfyQeM) 🎥')
 ###################################
 ###################################
 
@@ -68,7 +68,7 @@ def ObtenerPartes(linea):
 ##################################################################################
 
 # Leer el archivo txt descargado del chat de WhatsApp
-RutaChat = 'Data/WhatsApp Chat with Tú ❤️.txt'
+RutaChat = 'WhatsApp Chat with Tú ❤️.txt'
 
 # Lista para almacenar los datos (Fecha, Hora, Miembro, Mensaje) de cada línea del txt
 DatosLista = []
@@ -423,7 +423,7 @@ stopwords = STOPWORDS.update(['que', 'qué', 'con', 'de', 'te', 'en', 'la', 'lo'
                               'pero', 'del', 'mas', 'más', 'eso', 'este', 'como', 'así', 'todo', 'https','Media','omitted',
                               'y', 'mi', 'o', 'q', 'yo', 'al'])
 
-mask = np.array(Image.open('Resources/heart.jpg'))
+mask = np.array(Image.open('heart.jpg'))
 
 # Obtener y acumular todas las palabras de cada mensaje
 for mensaje in mensajes_df['Mensaje'].values:
